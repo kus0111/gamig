@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"],
+    .container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .container button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .container button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .container .message {
+      margin-top: 20px;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+    <header class="head_class">
+        <nav class="nav_div">
+            <div>
+                <h3>
+                    logo
+                </h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="tournament.html">tournament</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="registration.html">Registration</a>
+                </li>
+                
+            </ul>
+            <div class="btn">
+                <button>
+                    <a href="login.html">log in</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+      <input type="text" placeholder="In game Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="number" placeholder="id number" required>
+      <select>
+        <option value="ind">Select district</option>
+        <option value="USA">cooch brhar</option>
+        <option value="UK">dinhata</option>
+        <option value="Canada">alipur</option>
+        <option value="Australia">falakata</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <p class="message">Already registered? <a href="#">Login here</a></p>
+  </div>
+</body>
+</html>
+
